@@ -13,7 +13,7 @@ print("My name is {o} {s}".format(o=hobbit_first, s=hobbit_last))
 
 # .Format() floating
 result = 100 / 777
-print("The result was {r:1.3f}".format(r=result)) # {value:width:precision}
+print("The result was {r:1.3f}".format(r=result)) # {value:width.precision}
 
 
 ## f strings
