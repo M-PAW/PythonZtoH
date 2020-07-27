@@ -66,16 +66,16 @@ for a,b,c in mylist:
 
 d = {'k1': 1, 'k2': 2, 'k3': 3}
 
-for item in d:          # Only iterates through the keys
+for item in d:                  # Only iterates through the keys
     print(item)
 
 for item in d.values():
-    print(item)         # Prints only the values
+    print(item)                 # Prints only the values
 
-for item in d.items():  # Prints the key pairs
+for item in d.items():          # Prints the key pairs
     print(item)
 
-for key, value in d.items():
+for key, value in d.items():    # Unpacking a dictionary
     print(value)
 
 
