@@ -7,6 +7,7 @@
         If you find yourself using a for loop combined with .append(),
         it might be better to use a Comprehension instead.
 
+
 '''
 import timeit
 
@@ -50,7 +51,7 @@ print(fahrenheit)
 
 """
     If else statements in a list comprehension
-    Looks like garbage
+    Looks like garbage but functions
 """
 
 result = [ 'EVEN' if x%2==0 else 'ODD' for x in range(0,11)]    # Confusing by its appearance
@@ -72,3 +73,4 @@ for x in [2,4,6]:
         mylist.append(x*y)
 
 print(mylist)
+
