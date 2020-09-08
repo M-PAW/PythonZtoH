@@ -89,4 +89,10 @@ def GuesNumb():
                 break
             print(f"Wrong! {guesses} guesses remaining.")
 
-GuesNumb()
+#GuesNumb()
+
+import unittest
+def addTwo():
+    return 1+2
+
+assert addTwo() == 3
