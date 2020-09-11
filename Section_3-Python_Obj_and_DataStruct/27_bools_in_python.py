@@ -1,5 +1,7 @@
 
-### Bools in Python
+'''
+    Bools in Python
+'''
 
 T = True        # Same as t = 1
 F = False       # Same as t = 0
