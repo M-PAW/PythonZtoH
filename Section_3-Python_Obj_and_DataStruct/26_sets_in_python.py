@@ -1,7 +1,8 @@
 
-### Sets in Python
-## Will not allow duplicates, only unique values
-# Unorderd collection of unique elements
+''' Sets in Python
+     Will not allow duplicates, only unique values
+     Unorderd collection of unique elements
+'''
 
 myset = set()
 mylist = [1,1,1,2,2,3,3,3,3,4]
