@@ -77,7 +77,7 @@
 # print(has_33([1,3,1,3]))
 # print(has_33([3,1,3]))
 
-def blackjack(a,b,c):
+#def blackjack(a,b,c):
 #     if a > 10: a=1
 #     if b > 10: b=1
 #     if c > 10: c=1
@@ -85,23 +85,23 @@ def blackjack(a,b,c):
 #         print('BUST') 
 #     else: print(sum([a,b,c]))
 
-    if sum([a,b,c]) <= 21:
-        print(sum([a,b,c]))
-    elif 11 in [a,b,c] and sum([a,b,c])-10 <= 21:
-        print(sum([a,b,c])-10)
-    else:
-        print('BUST')
+#    if sum([a,b,c]) <= 21:
+#        print(sum([a,b,c]))
+#    elif 11 in [a,b,c] and sum([a,b,c])-10 <= 21:
+#        print(sum([a,b,c])-10)
+#    else:
+#        print('BUST')
 
 # # Check
-blackjack(5,6,7)
+#blackjack(5,6,7)
 
 # # Check
-blackjack(9,9,9)
+#blackjack(9,9,9)
 
 # # Check
-blackjack(9,9,11)
+#blackjack(9,9,11)
 
-# def spy_game(nums):
+def spy_game(nums):
 #     watch_dog = 0
 #     agent_card = [0,0,7]
 #     for num in nums:
@@ -112,6 +112,14 @@ blackjack(9,9,11)
 #             return True
 #     return False
 
-# print(spy_game([1,2,4,0,0,7,5]))
-# print(spy_game([1,0,2,4,0,5,7]))
-# print(spy_game([1,7,2,0,4,5,0]))
+    code = [0,0,7,'x']
+
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+    
+    return len(code) == 1
+
+print(spy_game([1,2,4,0,0,7,5]))
+print(spy_game([1,0,2,4,0,5,7]))
+print(spy_game([1,7,2,0,4,5,0]))
