@@ -8,11 +8,9 @@
 # print(lesser_of_two_evens(2,5)) # 5
 
 # def animal_crackers(text):
-#     wordArray = text.split(' ')
+    #  wordArray = text.lower().split(' ')
 
-#     if wordArray[0][0] == wordArray[1][0]:
-#         return True
-#     return False
+    #  return wordArray[0][0] == wordArray[1][0]
 
 # # Check
 # print(animal_crackers('Levelheaded Llama'))
@@ -20,14 +18,12 @@
 # # Check
 # print(animal_crackers('Crazy Kangaroo'))
 
-# def makes_twenty(n1,n2):
-#     if (n1+n2) == 20 or n1 == 20 or n2 == 20:
-#         return True
-#     return False
+def makes_twenty(n1,n2):
+    return (n1+n2) == 20 or n1 == 20 or n2 == 20
 
-# print(makes_twenty(20,10))
-# print(makes_twenty(12,8))
-# print(makes_twenty(2,3))
+print(makes_twenty(20,10))
+print(makes_twenty(12,8))
+print(makes_twenty(2,3))
 
 # def old_mcdonald(name):
 #     return name[:2].capitalize() + name[2:].capitalize()
@@ -65,17 +61,17 @@
 # # Check
 # blackjack(9,9,11)
 
-def spy_game(nums):
-    watch_dog = 0
-    agent_card = [0,0,7]
-    for num in nums:
-        if num == agent_card[watch_dog]:
-            watch_dog += 1
+# def spy_game(nums):
+#     watch_dog = 0
+#     agent_card = [0,0,7]
+#     for num in nums:
+#         if num == agent_card[watch_dog]:
+#             watch_dog += 1
 
-        if watch_dog == len(agent_card):
-            return True
-    return False
+#         if watch_dog == len(agent_card):
+#             return True
+#     return False
 
-print(spy_game([1,2,4,0,0,7,5]))
-print(spy_game([1,0,2,4,0,5,7]))
-print(spy_game([1,7,2,0,4,5,0]))
+# print(spy_game([1,2,4,0,0,7,5]))
+# print(spy_game([1,0,2,4,0,5,7]))
+# print(spy_game([1,7,2,0,4,5,0]))
