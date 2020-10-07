@@ -101,6 +101,9 @@
 # # Check
 #blackjack(9,9,11)
 
+def ErrorAlert(text):
+    print('Error:' + text)
+
 def spy_game(nums):
 #     watch_dog = 0
 #     agent_card = [0,0,7]
@@ -112,7 +115,7 @@ def spy_game(nums):
 #             return True
 #     return False
 
-    code = [0,0,7,'x']
+    code = [0,0,7, 'x']
 
     for num in nums:
         if num == code[0]:
