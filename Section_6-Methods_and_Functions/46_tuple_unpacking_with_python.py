@@ -16,6 +16,7 @@ def employee_check(work_hours):
     current_max=0
     employee_of_month = ''
 
+    # Unpacking a tuple into a for look logic condition
     for emp,hrs in work_hours:
         if hrs > current_max:
             current_max = hrs
