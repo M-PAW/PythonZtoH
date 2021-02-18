@@ -13,7 +13,11 @@ for num in range(0,10,2):   # prints out every second step
     print(num)
 
 '''
-    Enumerate
+    Enumerate,
+    if allows you to work your way through a 
+    piece of data and utilize individual parts
+    or it. It also allows you to unpack the index or
+    each piece and use it.
 '''
 
 word = 'abdce'
