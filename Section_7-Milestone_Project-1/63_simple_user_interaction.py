@@ -1,9 +1,4 @@
 
-#Game List
-game_list = [0,1,2]
-
-# Game On/Off 
-game_on = True
 
 # Display Function
 def display_game(game_list):
@@ -54,14 +49,24 @@ def gameon_choice():
 
 
 # Main Game Function
-while game_on:
+def placerGame():
+    #Game List
+    game_list = [0,1,2]
 
-    display_game(game_list)
+    # Game On/Off 
+    game_on = True
 
-    position = position_choice()
 
-    game_list = replacement_choice(game_list, position)
+    while game_on:
 
-    display_game(game_list)
+        display_game(game_list)
 
-    game_on = gameon_choice ()
+        position = position_choice()
+
+        game_list = replacement_choice(game_list, position)
+
+        display_game(game_list)
+
+        game_on = gameon_choice ()
+
+placerGame()
