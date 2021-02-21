@@ -11,6 +11,7 @@ def display_board(board):
     print(f"   |   |  ")
 
 def clearTerminal():
+    # This is OS specific for mac, and requires an inport of os
     os.system('clear')
 
 def player_input(mark):
@@ -65,7 +66,6 @@ def ticTacToe():
     win = False
     moves = 0
 
-
     while gameOn:
 
         clearTerminal()
@@ -98,5 +98,4 @@ def ticTacToe():
             turn = not turn
     clearTerminal()
 
-    
 ticTacToe()
