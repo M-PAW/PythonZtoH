@@ -1,6 +1,14 @@
 
+import random
+
 # Card
 # Suit, Rank, Value
+
+# Suits
+suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
+
+# Ranks
+ranks = ('Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King','Ace')
 
 # Card Value Dictionary
 values = {
@@ -36,13 +44,31 @@ class Card:
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-two_hearts = Card("hearts", "two")
+#two_hearts = Card("hearts", "two")
 
-print(two_hearts)
+#print(two_hearts)
 
-print(two_hearts.value)
+#print(two_hearts.value)
 
 
-three_hearts = Card("hearts", "three")
+#three_hearts = Card("hearts", "three")
 
-print(two_hearts.value < three_hearts.value)
+#print(two_hearts.value < three_hearts.value)
+
+class Deck:
+
+    def __init__(self):
+        self.all_cards = []
+
+        for suit in suits:
+            for rank in ranks:
+                created_card = Card(suit,rank)
+
+                # Create the card, each rank per each suit.
+                self.all_cards.append(created_card)
+
+
+new_deck = Deck()
+
+print(new_deck.all_cards[-1])
+
