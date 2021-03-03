@@ -66,9 +66,50 @@ class Deck:
 
                 # Create the card, each rank per each suit.
                 self.all_cards.append(created_card)
+    
+    def shuffle(self):
+        random.shuffle(self.all_cards)
+
+    def deal_one(self):
+        return self.all_cards.pop(0)
 
 
 new_deck = Deck()
+new_deck.shuffle()
+#print(new_deck.deal_one())
+#print(len(new_deck.all_cards))
 
-print(new_deck.all_cards[-1])
+class Player:
+    def __init__(self,name):
+        self.name = name
+        self.all_cards = []
 
+    def remove_one(self):
+        return self.all_cards.pop(0)
+
+    def add_card(self, new_cards):
+        if type(new_cards) == type([]):
+            # Add Multiple Cards
+            self.all_cards.extend(new_cards)
+        else:
+            # Add Single Card
+            self.all_cards.append(new_cards)
+
+    def __str__(self):
+        return f'Player {self.name} has {len(self.all_cards)} cards.'
+
+
+
+new_player = Player("Jimmy")
+
+
+print(new_player)
+myCard = new_deck.deal_one()
+#new_player.add_card(myCard)
+
+print(new_player.add_card([myCard,myCard,myCard,myCard,myCard]))
+print(new_player)
+
+new_player.remove_one()
+
+print(new_player)
